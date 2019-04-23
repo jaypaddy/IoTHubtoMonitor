@@ -19,6 +19,7 @@ https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-event-grid-routing-compar
 
 
 Log Analytics Query to query for all collectors\stores that did not send a heartbeat in the last 3m
+
 WebMonitorTest_CL
 | where TimeGenerated > ago(10d)
 | project TimeGenerated , Store_ID_s
